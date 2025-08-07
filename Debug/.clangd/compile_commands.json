@@ -1,0 +1,212 @@
+[
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/adc10_a.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/adc12_a.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/aes.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/battbak.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/comp_b.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/crc.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/ctsd16.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/dac12_a.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/dma.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/eusci_a_spi.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/eusci_a_uart.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/eusci_b_i2c.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/eusci_b_spi.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/flashctl.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/gpio.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/lcd_b.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/lcd_c.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/ldopwr.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/mpy32.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/oa.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/pmap.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/pmm.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/ram.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/ref.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/rtc_a.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/rtc_b.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/rtc_c.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/sd24_b.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/sfr.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/sysctl.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/tec.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/timer_a.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/timer_b.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/timer_d.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/tlv.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/ucs.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/usci_a_spi.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/usci_a_uart.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/usci_b_i2c.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/usci_b_spi.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx/wdt_a.c"
+   },
+   {
+      "directory" : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/Debug",
+      "command"   : "clang++ -I\"/home/jtwillobee/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX\" -I\"/home/jtwillobee/repos/I2C_AHT21_TX__RX/driverlib/MSP430F5xx_6xx\" -I\"/home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430F5529__ -DDEPRECATED -xc",
+      "file"      : "/home/jtwillobee/repos/I2C_AHT21_TX__RX/main.c"
+   }
+]
