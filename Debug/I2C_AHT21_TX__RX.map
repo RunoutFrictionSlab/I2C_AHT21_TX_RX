@@ -1,10 +1,10 @@
 ******************************************************************************
                   MSP430 Linker Unix v21.6.1                   
 ******************************************************************************
->> Linked Wed Aug  6 21:14:15 2025
+>> Linked Thu Aug  7 13:55:55 2025
 
 OUTPUT FILE NAME:   <I2C_AHT21_TX__RX.out>
-ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00004488
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 0000446a
 
 
 MEMORY CONFIGURATION
@@ -20,7 +20,7 @@ MEMORY CONFIGURATION
   INFOA                 00001980   00000080  00000000  00000080  RWIX
   USBRAM                00001c00   00000800  00000000  00000800  RWIX
   RAM                   00002400   00002000  000004b4  00001b4c  RWIX
-  FLASH                 00004400   0000bb80  000001ca  0000b9b6  RWIX
+  FLASH                 00004400   0000bb80  000001ac  0000b9d4  RWIX
   INT00                 0000ff80   00000002  00000000  00000002  RWIX
   INT01                 0000ff82   00000002  00000000  00000002  RWIX
   INT02                 0000ff84   00000002  00000000  00000002  RWIX
@@ -85,7 +85,7 @@ MEMORY CONFIGURATION
   INT61                 0000fffa   00000002  00000002  00000000  RWIX
   INT62                 0000fffc   00000002  00000002  00000000  RWIX
   RESET                 0000fffe   00000002  00000002  00000000  RWIX
-  FLASH2                00010000   000143f8  00004072  00010386  RWIX
+  FLASH2                00010000   000143f8  00004070  00010388  RWIX
 
 
 SECTION ALLOCATION MAP
@@ -130,29 +130,28 @@ section   page    origin      length       input sections
                   00004364    0000009c     --HOLE--
 
 .text:_isr 
-*          0    00004400    000000ac     
-                  00004400    00000088     main.obj (.text:_isr:USCI_B0_I2C_ISR)
-                  00004488    0000001c     rts430x_lc_rd_eabi.lib : boot.c.obj (.text:_isr:_c_int00_noargs)
-                  000044a4    00000008                            : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
+*          0    00004400    0000008e     
+                  00004400    0000006a     main.obj (.text:_isr:USCI_B0_I2C_ISR)
+                  0000446a    0000001c     rts430x_lc_rd_eabi.lib : boot.c.obj (.text:_isr:_c_int00_noargs)
+                  00004486    00000008                            : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
 
-.cinit     0    0000454c    0000007e     
-                  0000454c    0000005b     (.cinit..data.load) [load image, compression = lzss]
-                  000045a7    00000001     --HOLE-- [fill = 0]
-                  000045a8    0000000c     (__TI_handler_table)
-                  000045b4    00000006     (.cinit..bss.load) [load image, compression = zero_init]
-                  000045ba    00000010     (__TI_cinit_table)
+.cinit     0    0000452e    0000007e     
+                  0000452e    0000005c     (.cinit..data.load) [load image, compression = lzss]
+                  0000458a    0000000c     (__TI_handler_table)
+                  00004596    00000006     (.cinit..bss.load) [load image, compression = zero_init]
+                  0000459c    00000010     (__TI_cinit_table)
 
 .binit     0    00004400    00000000     
 
 .init_array 
 *          0    00004400    00000000     UNINITIALIZED
 
-.const     0    000044ac    000000a0     
-                  000044ac    0000004a     main.obj (.const:.string)
-                  000044f6    00000026     rts430x_lc_rd_eabi.lib : _printfi.c.obj (.const:.string)
-                  0000451c    00000010                            : e_pow.c.obj (.const:bp)
-                  0000452c    00000010                            : e_pow.c.obj (.const:dp_h)
-                  0000453c    00000010                            : e_pow.c.obj (.const:dp_l)
+.const     0    0000448e    000000a0     
+                  0000448e    0000004a     main.obj (.const:.string)
+                  000044d8    00000026     rts430x_lc_rd_eabi.lib : _printfi.c.obj (.const:.string)
+                  000044fe    00000010                            : e_pow.c.obj (.const:bp)
+                  0000450e    00000010                            : e_pow.c.obj (.const:dp_h)
+                  0000451e    00000010                            : e_pow.c.obj (.const:dp_l)
 
 RTC        0    0000ffd2    00000002     
                   0000ffd2    00000002     rts430x_lc_rd_eabi.lib : int41.asm.obj (.int41)
@@ -231,7 +230,7 @@ SYSNMI     0    0000fffc    00000002
 .reset     0    0000fffe    00000002     
                   0000fffe    00000002     rts430x_lc_rd_eabi.lib : boot.c.obj (.reset)
 
-.text      0    00010000    00004072     
+.text      0    00010000    00004070     
                   00010000    0000114c     rts430x_lc_rd_eabi.lib : e_pow.c.obj (.text:pow)
                   0001114c    0000072a                            : addd.c.obj (.text:__mspabi_addd)
                   00011876    00000468                            : frcdivd.c.obj (.text:__TI_frcdivd)
@@ -241,94 +240,94 @@ SYSNMI     0    0000fffc    00000002
                   00012468    00000164                            : frcmpyd.c.obj (.text:__TI_frcmpyd)
                   000125cc    0000015a                            : s_scalbn.c.obj (.text:scalbn)
                   00012726    00000132                            : _printfi.c.obj (.text:__TI_printfi_minimal:_setfield___TI_printfi_minimal)
-                  00012858    0000011c     main.obj (.text:main)
-                  00012974    00000112     rts430x_lc_rd_eabi.lib : memory.c.obj (.text:aligned_alloc)
-                  00012a86    000000f0                            : fputs.c.obj (.text:fputs)
-                  00012b76    000000e2                            : memory.c.obj (.text:free)
-                  00012c58    000000de                            : setvbuf.c.obj (.text:setvbuf)
-                  00012d36    000000dc                            : _printfi.c.obj (.text:__TI_printfi_minimal:__TI_printfi_minimal)
-                  00012e12    000000da                            : _printfi.c.obj (.text:__TI_printfi_minimal:_pproc_diouxp___TI_printfi_minimal)
-                  00012eec    000000d8                            : cmpd.c.obj (.text:__mspabi_cmpd)
-                  00012fc4    0000009e                            : fltlid.c.obj (.text:__mspabi_fltlid)
-                  00013062    0000009a                            : hostlseek.c.obj (.text:HOSTlseek)
-                  000130fc    00000090                            : fputc.c.obj (.text:fputc)
-                  0001318c    00000080                            : fltuld.c.obj (.text:__mspabi_fltuld)
-                  0001320c    0000007e                            : _io_perm.c.obj (.text:__TI_wrt_ok)
-                  0001328a    00000076                            : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
-                  00013300    00000074                            : hostrename.c.obj (.text:HOSTrename)
-                  00013374    00000074                            : fclose.c.obj (.text:__TI_closefile)
-                  000133e8    00000074                            : memory.c.obj (.text:split)
-                  0001345c    00000072     main.obj (.text:ths_calc_temp)
-                  000134ce    00000070     rts430x_lc_rd_eabi.lib : hostopen.c.obj (.text:HOSTopen)
-                  0001353e    0000006c                            : hostwrite.c.obj (.text:HOSTwrite)
-                  000135aa    0000006a                            : hostread.c.obj (.text:HOSTread)
-                  00013614    0000006a                            : fseek.c.obj (.text:fseeko)
-                  0001367e    00000066                            : fixdli.c.obj (.text:__mspabi_fixdli)
-                  000136e4    00000064                            : fflush.c.obj (.text:__TI_doflush)
-                  00013748    0000005c                            : mult64_f5hw.asm.obj (.text:__mpyll)
-                  000137a4    0000005c     main.obj (.text:ths_calc_rh)
-                  00013800    0000005a     rts430x_lc_rd_eabi.lib : close.c.obj (.text:close)
-                  0001385a    0000005a                            : getdevice.c.obj (.text:getdevice)
-                  000138b4    00000054                            : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
-                  00013908    0000004e                            : hostclose.c.obj (.text:HOSTclose)
-                  00013956    0000004a                            : exit.c.obj (.text:exit)
-                  000139a0    0000004a                            : printf.c.obj (.text:printf)
-                  000139ea    00000048                            : _printfi.c.obj (.text:__TI_printfi_minimal:_pproc_str___TI_printfi_minimal)
-                  00013a32    00000046                            : hostunlink.c.obj (.text:HOSTunlink)
-                  00013a78    00000040                            : asr64.c.obj (.text:__mspabi_srall)
-                  00013ab8    0000003e                            : asr32.asm.obj (.text:l_asr_const)
-                  00013af6    0000003e                            : lsl32.asm.obj (.text:l_lsl_const)
-                  00013b34    0000003e                            : lsr32.asm.obj (.text:l_lsr_const)
-                  00013b72    0000003e                            : lseek.c.obj (.text:lseek)
-                  00013bb0    0000003c                            : write.c.obj (.text:write)
-                  00013bec    0000003a                            : lsl64.c.obj (.text:__mspabi_sllll)
-                  00013c26    0000003a                            : lsr64.c.obj (.text:__mspabi_srlll)
-                  00013c60    00000036                            : fopen.c.obj (.text:__TI_cleanup)
-                  00013c96    00000036                            : trgmsg.c.obj (.text:__TI_writemsg)
-                  00013ccc    00000032                            : trgmsg.c.obj (.text:__TI_readmsg)
-                  00013cfe    00000032                            : subd.c.obj (.text:__mspabi_subd)
-                  00013d30    00000032                            : strncpy.c.obj (.text:strncpy)
-                  00013d62    00000030                            : unlink.c.obj (.text:unlink)
-                  00013d92    0000002e                            : negd.c.obj (.text:__mspabi_negd)
-                  00013dc0    0000002e                            : s_copysign.c.obj (.text:copysign)
-                  00013dee    0000002e                            : getdevice.c.obj (.text:finddevice)
-                  00013e1c    0000002c                            : mult3264_f5hw.asm.obj (.text:__mpyull)
-                  00013e48    0000002c                            : memory.c.obj (.text:free_list_insert)
-                  00013e74    0000002a                            : memory.c.obj (.text:free_list_remove)
-                  00013e9e    00000028                            : fixdi.c.obj (.text:__mspabi_fixdi)
-                  00013ec6    00000026                            : memccpy.c.obj (.text:memccpy)
-                  00013eec    00000024                            : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
-                  00013f10    00000024                            : mult32_f5hw.asm.obj (.text)
-                  00013f34    0000001c                            : strchr.c.obj (.text:strchr)
-                  00013f50    0000001c                            : strcmp.c.obj (.text:strcmp)
-                  00013f6c    00000018                            : mult16_f5hw.asm.obj (.text)
-                  00013f84    00000016                            : memory.c.obj (.text:heap_start)
-                  00013f9a    00000016                            : memchr.c.obj (.text:memchr)
-                  00013fb0    00000016                            : memset.c.obj (.text:memset)
-                  00013fc6    00000016                            : div16u.asm.obj (.text)
-                  00013fdc    00000014                            : memcpy.c.obj (.text:memcpy)
-                  00013ff0    00000012                            : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
-                  00014002    00000012                            : strcpy.c.obj (.text:strcpy)
-                  00014014    00000010                            : asr32.asm.obj (.text:l_asr)
-                  00014024    00000010                            : lsl32.asm.obj (.text:l_lsl)
-                  00014034    00000010                            : lsr32.asm.obj (.text:l_lsr)
-                  00014044    0000000e                            : strlen.c.obj (.text:strlen)
-                  00014052    00000008                            : memory.c.obj (.text:malloc)
-                  0001405a    00000006                            : printf.c.obj (.text:_outc)
-                  00014060    00000006                            : exit.c.obj (.text:abort)
-                  00014066    00000004                            : printf.c.obj (.text:_outs)
-                  0001406a    00000004                            : pre_init.c.obj (.text:_system_pre_init)
-                  0001406e    00000002                            : _lock.c.obj (.text:_nop)
-                  00014070    00000002                            : startup.c.obj (.text:_system_post_cinit)
+                  00012858    0000011a     main.obj (.text:main)
+                  00012972    00000112     rts430x_lc_rd_eabi.lib : memory.c.obj (.text:aligned_alloc)
+                  00012a84    000000f0                            : fputs.c.obj (.text:fputs)
+                  00012b74    000000e2                            : memory.c.obj (.text:free)
+                  00012c56    000000de                            : setvbuf.c.obj (.text:setvbuf)
+                  00012d34    000000dc                            : _printfi.c.obj (.text:__TI_printfi_minimal:__TI_printfi_minimal)
+                  00012e10    000000da                            : _printfi.c.obj (.text:__TI_printfi_minimal:_pproc_diouxp___TI_printfi_minimal)
+                  00012eea    000000d8                            : cmpd.c.obj (.text:__mspabi_cmpd)
+                  00012fc2    0000009e                            : fltlid.c.obj (.text:__mspabi_fltlid)
+                  00013060    0000009a                            : hostlseek.c.obj (.text:HOSTlseek)
+                  000130fa    00000090                            : fputc.c.obj (.text:fputc)
+                  0001318a    00000080                            : fltuld.c.obj (.text:__mspabi_fltuld)
+                  0001320a    0000007e                            : _io_perm.c.obj (.text:__TI_wrt_ok)
+                  00013288    00000076                            : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  000132fe    00000074                            : hostrename.c.obj (.text:HOSTrename)
+                  00013372    00000074                            : fclose.c.obj (.text:__TI_closefile)
+                  000133e6    00000074                            : memory.c.obj (.text:split)
+                  0001345a    00000072     main.obj (.text:ths_calc_temp)
+                  000134cc    00000070     rts430x_lc_rd_eabi.lib : hostopen.c.obj (.text:HOSTopen)
+                  0001353c    0000006c                            : hostwrite.c.obj (.text:HOSTwrite)
+                  000135a8    0000006a                            : hostread.c.obj (.text:HOSTread)
+                  00013612    0000006a                            : fseek.c.obj (.text:fseeko)
+                  0001367c    00000066                            : fixdli.c.obj (.text:__mspabi_fixdli)
+                  000136e2    00000064                            : fflush.c.obj (.text:__TI_doflush)
+                  00013746    0000005c                            : mult64_f5hw.asm.obj (.text:__mpyll)
+                  000137a2    0000005c     main.obj (.text:ths_calc_rh)
+                  000137fe    0000005a     rts430x_lc_rd_eabi.lib : close.c.obj (.text:close)
+                  00013858    0000005a                            : getdevice.c.obj (.text:getdevice)
+                  000138b2    00000054                            : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
+                  00013906    0000004e                            : hostclose.c.obj (.text:HOSTclose)
+                  00013954    0000004a                            : exit.c.obj (.text:exit)
+                  0001399e    0000004a                            : printf.c.obj (.text:printf)
+                  000139e8    00000048                            : _printfi.c.obj (.text:__TI_printfi_minimal:_pproc_str___TI_printfi_minimal)
+                  00013a30    00000046                            : hostunlink.c.obj (.text:HOSTunlink)
+                  00013a76    00000040                            : asr64.c.obj (.text:__mspabi_srall)
+                  00013ab6    0000003e                            : asr32.asm.obj (.text:l_asr_const)
+                  00013af4    0000003e                            : lsl32.asm.obj (.text:l_lsl_const)
+                  00013b32    0000003e                            : lsr32.asm.obj (.text:l_lsr_const)
+                  00013b70    0000003e                            : lseek.c.obj (.text:lseek)
+                  00013bae    0000003c                            : write.c.obj (.text:write)
+                  00013bea    0000003a                            : lsl64.c.obj (.text:__mspabi_sllll)
+                  00013c24    0000003a                            : lsr64.c.obj (.text:__mspabi_srlll)
+                  00013c5e    00000036                            : fopen.c.obj (.text:__TI_cleanup)
+                  00013c94    00000036                            : trgmsg.c.obj (.text:__TI_writemsg)
+                  00013cca    00000032                            : trgmsg.c.obj (.text:__TI_readmsg)
+                  00013cfc    00000032                            : subd.c.obj (.text:__mspabi_subd)
+                  00013d2e    00000032                            : strncpy.c.obj (.text:strncpy)
+                  00013d60    00000030                            : unlink.c.obj (.text:unlink)
+                  00013d90    0000002e                            : negd.c.obj (.text:__mspabi_negd)
+                  00013dbe    0000002e                            : s_copysign.c.obj (.text:copysign)
+                  00013dec    0000002e                            : getdevice.c.obj (.text:finddevice)
+                  00013e1a    0000002c                            : mult3264_f5hw.asm.obj (.text:__mpyull)
+                  00013e46    0000002c                            : memory.c.obj (.text:free_list_insert)
+                  00013e72    0000002a                            : memory.c.obj (.text:free_list_remove)
+                  00013e9c    00000028                            : fixdi.c.obj (.text:__mspabi_fixdi)
+                  00013ec4    00000026                            : memccpy.c.obj (.text:memccpy)
+                  00013eea    00000024                            : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
+                  00013f0e    00000024                            : mult32_f5hw.asm.obj (.text)
+                  00013f32    0000001c                            : strchr.c.obj (.text:strchr)
+                  00013f4e    0000001c                            : strcmp.c.obj (.text:strcmp)
+                  00013f6a    00000018                            : mult16_f5hw.asm.obj (.text)
+                  00013f82    00000016                            : memory.c.obj (.text:heap_start)
+                  00013f98    00000016                            : memchr.c.obj (.text:memchr)
+                  00013fae    00000016                            : memset.c.obj (.text:memset)
+                  00013fc4    00000016                            : div16u.asm.obj (.text)
+                  00013fda    00000014                            : memcpy.c.obj (.text:memcpy)
+                  00013fee    00000012                            : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  00014000    00000012                            : strcpy.c.obj (.text:strcpy)
+                  00014012    00000010                            : asr32.asm.obj (.text:l_asr)
+                  00014022    00000010                            : lsl32.asm.obj (.text:l_lsl)
+                  00014032    00000010                            : lsr32.asm.obj (.text:l_lsr)
+                  00014042    0000000e                            : strlen.c.obj (.text:strlen)
+                  00014050    00000008                            : memory.c.obj (.text:malloc)
+                  00014058    00000006                            : printf.c.obj (.text:_outc)
+                  0001405e    00000006                            : exit.c.obj (.text:abort)
+                  00014064    00000004                            : printf.c.obj (.text:_outs)
+                  00014068    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+                  0001406c    00000002                            : _lock.c.obj (.text:_nop)
+                  0001406e    00000002                            : startup.c.obj (.text:_system_post_cinit)
 
 MODULE SUMMARY
 
        Module                       code    ro data   rw data
        ------                       ----    -------   -------
     ./
-       main.obj                     626     76        20     
+       main.obj                     594     76        20     
     +--+----------------------------+-------+---------+---------+
-       Total:                       626     76        20     
+       Total:                       594     76        20     
                                                              
     /home/jtwillobee/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib/rts430x_lc_rd_eabi.lib
        e_pow.c.obj                  4428    48        0      
@@ -431,21 +430,21 @@ MODULE SUMMARY
                                                              
        Heap:                        0       0         160    
        Stack:                       0       0         160    
-       Linker Generated:            0       125       0      
+       Linker Generated:            0       126       0      
     +--+----------------------------+-------+---------+---------+
-       Grand Total:                 16670   331       1204   
+       Grand Total:                 16638   332       1204   
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 000045ba records: 2, size/record: 8, table size: 16
-	.data: load addr=0000454c, load size=0000005b bytes, run addr=00002400, run size=0000019e bytes, compression=lzss
-	.bss: load addr=000045b4, load size=00000006 bytes, run addr=000026be, run size=000000b6 bytes, compression=zero_init
+__TI_cinit_table @ 0000459c records: 2, size/record: 8, table size: 16
+	.data: load addr=0000452e, load size=0000005c bytes, run addr=00002400, run size=0000019e bytes, compression=lzss
+	.bss: load addr=00004596, load size=00000006 bytes, run addr=000026be, run size=000000b6 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 000045a8 records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 0000458a records: 3, size/record: 4, table size: 12
 	index: 0, handler: __TI_zero_init
 	index: 1, handler: __TI_decompress_lzss
 	index: 2, handler: __TI_decompress_none
@@ -537,8 +536,8 @@ address   name
 00000732  ADC12MEM9                              
 00000733  ADC12MEM9_H                            
 00000732  ADC12MEM9_L                            
-00014060  C$$EXIT                                
-00013cc8  C$$IO$$                                
+0001405e  C$$EXIT                                
+00013cc6  C$$IO$$                                
 000008c0  CBCTL0                                 
 000008c1  CBCTL0_H                               
 000008c0  CBCTL0_L                               
@@ -606,13 +605,13 @@ address   name
 00000146  FCTL4                                  
 00000147  FCTL4_H                                
 00000146  FCTL4_L                                
-00013908  HOSTclose                              
-00013062  HOSTlseek                              
-000134ce  HOSTopen                               
-000135aa  HOSTread                               
-00013300  HOSTrename                             
-00013a32  HOSTunlink                             
-0001353e  HOSTwrite                              
+00013906  HOSTclose                              
+00013060  HOSTlseek                              
+000134cc  HOSTopen                               
+000135a8  HOSTread                               
+000132fe  HOSTrename                             
+00013a30  HOSTunlink                             
+0001353c  HOSTwrite                              
 000004c4  MAC                                    
 000004da  MAC32H                                 
 000004db  MAC32H_H                               
@@ -1199,19 +1198,19 @@ address   name
 00004400  __STACK_END                            
 000000a0  __STACK_SIZE                           
 000000a0  __SYSMEM_SIZE                          
-000045ba  __TI_CINIT_Base                        
-000045ca  __TI_CINIT_Limit                       
-000045ca  __TI_CINIT_Warm                        
-000045a8  __TI_Handler_Table_Base                
-000045b4  __TI_Handler_Table_Limit               
-000044a4  __TI_ISR_TRAP                          
-000138b4  __TI_auto_init_nobinit_nopinit_hold_wdt
-00013c60  __TI_cleanup                           
+0000459c  __TI_CINIT_Base                        
+000045ac  __TI_CINIT_Limit                       
+000045ac  __TI_CINIT_Warm                        
+0000458a  __TI_Handler_Table_Base                
+00004596  __TI_Handler_Table_Limit               
+00004486  __TI_ISR_TRAP                          
+000138b2  __TI_auto_init_nobinit_nopinit_hold_wdt
+00013c5e  __TI_cleanup                           
 00002582  __TI_cleanup_ptr                       
-00013374  __TI_closefile                         
-0001328a  __TI_decompress_lzss                   
-00013ff0  __TI_decompress_none                   
-000136e4  __TI_doflush                           
+00013372  __TI_closefile                         
+00013288  __TI_decompress_lzss                   
+00013fee  __TI_decompress_none                   
+000136e2  __TI_doflush                           
 00002586  __TI_dtors_ptr                         
 0000259a  __TI_enable_exit_profile_output        
 00011876  __TI_frcdivd                           
@@ -1240,145 +1239,145 @@ address   name
 0000fffa  __TI_int61                             
 0000fffc  __TI_int62                             
 ffffffff  __TI_pprof_out_hndl                    
-00012d36  __TI_printfi_minimal                   
+00012d34  __TI_printfi_minimal                   
 ffffffff  __TI_prof_data_size                    
 ffffffff  __TI_prof_data_start                   
-00013ccc  __TI_readmsg                           
+00013cca  __TI_readmsg                           
 000026be  __TI_tmpnams                           
-00013c96  __TI_writemsg                          
-0001320c  __TI_wrt_ok                            
-00013eec  __TI_zero_init_nomemset                
+00013c94  __TI_writemsg                          
+0001320a  __TI_wrt_ok                            
+00013eea  __TI_zero_init_nomemset                
 ffffffff  __c_args__                             
 0001114c  __mspabi_addd                          
-00012eec  __mspabi_cmpd                          
+00012eea  __mspabi_cmpd                          
 0001224c  __mspabi_divd                          
-00013fc6  __mspabi_divu                          
-00013e9e  __mspabi_fixdi                         
-0001367e  __mspabi_fixdli                        
-00012fc4  __mspabi_fltlid                        
-0001318c  __mspabi_fltuld                        
+00013fc4  __mspabi_divu                          
+00013e9c  __mspabi_fixdi                         
+0001367c  __mspabi_fixdli                        
+00012fc2  __mspabi_fltlid                        
+0001318a  __mspabi_fltuld                        
 00011fba  __mspabi_mpyd                          
-00013f6c  __mspabi_mpyi_f5hw                     
-00013f10  __mspabi_mpyl_f5hw                     
-00013748  __mspabi_mpyll_f5hw                    
-00013e1c  __mspabi_mpyull_f5hw                   
-00013d92  __mspabi_negd                          
-00013fc6  __mspabi_remu                          
-00014024  __mspabi_slll                          
-00013b2e  __mspabi_slll_1                        
-00013b0a  __mspabi_slll_10                       
-00013b06  __mspabi_slll_11                       
-00013b02  __mspabi_slll_12                       
-00013afe  __mspabi_slll_13                       
-00013afa  __mspabi_slll_14                       
-00013af6  __mspabi_slll_15                       
-00013b2a  __mspabi_slll_2                        
-00013b26  __mspabi_slll_3                        
-00013b22  __mspabi_slll_4                        
-00013b1e  __mspabi_slll_5                        
-00013b1a  __mspabi_slll_6                        
-00013b16  __mspabi_slll_7                        
-00013b12  __mspabi_slll_8                        
-00013b0e  __mspabi_slll_9                        
-00013bec  __mspabi_sllll                         
-00014014  __mspabi_sral                          
-00013af0  __mspabi_sral_1                        
-00013acc  __mspabi_sral_10                       
-00013ac8  __mspabi_sral_11                       
-00013ac4  __mspabi_sral_12                       
-00013ac0  __mspabi_sral_13                       
-00013abc  __mspabi_sral_14                       
-00013ab8  __mspabi_sral_15                       
-00013aec  __mspabi_sral_2                        
-00013ae8  __mspabi_sral_3                        
-00013ae4  __mspabi_sral_4                        
-00013ae0  __mspabi_sral_5                        
-00013adc  __mspabi_sral_6                        
-00013ad8  __mspabi_sral_7                        
-00013ad4  __mspabi_sral_8                        
-00013ad0  __mspabi_sral_9                        
-00013a78  __mspabi_srall                         
-00014034  __mspabi_srll                          
-00013b6c  __mspabi_srll_1                        
-00013b48  __mspabi_srll_10                       
-00013b44  __mspabi_srll_11                       
-00013b40  __mspabi_srll_12                       
-00013b3c  __mspabi_srll_13                       
-00013b38  __mspabi_srll_14                       
-00013b34  __mspabi_srll_15                       
-00013b68  __mspabi_srll_2                        
-00013b64  __mspabi_srll_3                        
-00013b60  __mspabi_srll_4                        
-00013b5c  __mspabi_srll_5                        
-00013b58  __mspabi_srll_6                        
-00013b54  __mspabi_srll_7                        
-00013b50  __mspabi_srll_8                        
-00013b4c  __mspabi_srll_9                        
-00013c26  __mspabi_srlll                         
-00013cfe  __mspabi_subd                          
-00004488  _c_int00_noargs                        
+00013f6a  __mspabi_mpyi_f5hw                     
+00013f0e  __mspabi_mpyl_f5hw                     
+00013746  __mspabi_mpyll_f5hw                    
+00013e1a  __mspabi_mpyull_f5hw                   
+00013d90  __mspabi_negd                          
+00013fc4  __mspabi_remu                          
+00014022  __mspabi_slll                          
+00013b2c  __mspabi_slll_1                        
+00013b08  __mspabi_slll_10                       
+00013b04  __mspabi_slll_11                       
+00013b00  __mspabi_slll_12                       
+00013afc  __mspabi_slll_13                       
+00013af8  __mspabi_slll_14                       
+00013af4  __mspabi_slll_15                       
+00013b28  __mspabi_slll_2                        
+00013b24  __mspabi_slll_3                        
+00013b20  __mspabi_slll_4                        
+00013b1c  __mspabi_slll_5                        
+00013b18  __mspabi_slll_6                        
+00013b14  __mspabi_slll_7                        
+00013b10  __mspabi_slll_8                        
+00013b0c  __mspabi_slll_9                        
+00013bea  __mspabi_sllll                         
+00014012  __mspabi_sral                          
+00013aee  __mspabi_sral_1                        
+00013aca  __mspabi_sral_10                       
+00013ac6  __mspabi_sral_11                       
+00013ac2  __mspabi_sral_12                       
+00013abe  __mspabi_sral_13                       
+00013aba  __mspabi_sral_14                       
+00013ab6  __mspabi_sral_15                       
+00013aea  __mspabi_sral_2                        
+00013ae6  __mspabi_sral_3                        
+00013ae2  __mspabi_sral_4                        
+00013ade  __mspabi_sral_5                        
+00013ada  __mspabi_sral_6                        
+00013ad6  __mspabi_sral_7                        
+00013ad2  __mspabi_sral_8                        
+00013ace  __mspabi_sral_9                        
+00013a76  __mspabi_srall                         
+00014032  __mspabi_srll                          
+00013b6a  __mspabi_srll_1                        
+00013b46  __mspabi_srll_10                       
+00013b42  __mspabi_srll_11                       
+00013b3e  __mspabi_srll_12                       
+00013b3a  __mspabi_srll_13                       
+00013b36  __mspabi_srll_14                       
+00013b32  __mspabi_srll_15                       
+00013b66  __mspabi_srll_2                        
+00013b62  __mspabi_srll_3                        
+00013b5e  __mspabi_srll_4                        
+00013b5a  __mspabi_srll_5                        
+00013b56  __mspabi_srll_6                        
+00013b52  __mspabi_srll_7                        
+00013b4e  __mspabi_srll_8                        
+00013b4a  __mspabi_srll_9                        
+00013c24  __mspabi_srlll                         
+00013cfc  __mspabi_subd                          
+0000446a  _c_int00_noargs                        
 000024c8  _device                                
 00002400  _ftable                                
 0000258a  _lock                                  
-0001406e  _nop                                   
+0001406c  _nop                                   
 0000fffe  _reset_vector                          
 00004360  _stack                                 
 00002540  _stream                                
 00002774  _sys_memory                            
-00014070  _system_post_cinit                     
-0001406a  _system_pre_init                       
+0001406e  _system_post_cinit                     
+00014068  _system_pre_init                       
 0000258e  _unlock                                
-00014060  abort                                  
-00012974  aligned_alloc                          
-00013800  close                                  
-00013dc0  copysign                               
-00013dc0  copysignl                              
+0001405e  abort                                  
+00012972  aligned_alloc                          
+000137fe  close                                  
+00013dbe  copysign                               
+00013dbe  copysignl                              
 00002598  errno                                  
-00013956  exit                                   
-00013dee  finddevice                             
-000130fc  fputc                                  
-00012a86  fputs                                  
-00012b76  free                                   
-00013614  fseek                                  
-00013614  fseeko                                 
-0001385a  getdevice                              
+00013954  exit                                   
+00013dec  finddevice                             
+000130fa  fputc                                  
+00012a84  fputs                                  
+00012b74  free                                   
+00013612  fseek                                  
+00013612  fseeko                                 
+00013858  getdevice                              
 00002595  i                                      
 000125cc  ldexp                                  
 000125cc  ldexpl                                 
-00013b72  lseek                                  
+00013b70  lseek                                  
 00012858  main                                   
-00014052  malloc                                 
-00012974  memalign                               
-00013ec6  memccpy                                
-00013f9a  memchr                                 
-00013fdc  memcpy                                 
-00013fb0  memset                                 
+00014050  malloc                                 
+00012972  memalign                               
+00013ec4  memccpy                                
+00013f98  memchr                                 
+00013fda  memcpy                                 
+00013fae  memset                                 
 0000275e  parmbuf                                
 00010000  pow                                    
 00010000  powl                                   
-000139a0  printf                                 
-000130fc  putc                                   
-00013d62  remove                                 
+0001399e  printf                                 
+000130fa  putc                                   
+00013d60  remove                                 
 00002772  rh_corr                                
 0000276a  rh_uncorr                              
 0000257c  rx_buffer                              
 000125cc  scalbn                                 
 000125cc  scalbnl                                
-00012c58  setvbuf                                
+00012c56  setvbuf                                
 00011cde  sqrt                                   
 00011cde  sqrtl                                  
-00013f34  strchr                                 
-00013f50  strcmp                                 
-00014002  strcpy                                 
-00014044  strlen                                 
-00013d30  strncpy                                
+00013f32  strchr                                 
+00013f4e  strcmp                                 
+00014000  strcpy                                 
+00014042  strlen                                 
+00013d2e  strncpy                                
 00002773  temp_corr                              
 0000276e  temp_uncorr                            
-000137a4  ths_calc_rh                            
-0001345c  ths_calc_temp                          
+000137a2  ths_calc_rh                            
+0001345a  ths_calc_temp                          
 00002592  tx_buffer                              
-00013d62  unlink                                 
-00013bb0  write                                  
+00013d60  unlink                                 
+00013bae  write                                  
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -2141,13 +2140,13 @@ address   name
 00004360  _stack                                 
 00004400  USCI_B0_I2C_ISR                        
 00004400  __STACK_END                            
-00004488  _c_int00_noargs                        
-000044a4  __TI_ISR_TRAP                          
-000045a8  __TI_Handler_Table_Base                
-000045b4  __TI_Handler_Table_Limit               
-000045ba  __TI_CINIT_Base                        
-000045ca  __TI_CINIT_Limit                       
-000045ca  __TI_CINIT_Warm                        
+0000446a  _c_int00_noargs                        
+00004486  __TI_ISR_TRAP                          
+0000458a  __TI_Handler_Table_Base                
+00004596  __TI_Handler_Table_Limit               
+0000459c  __TI_CINIT_Base                        
+000045ac  __TI_CINIT_Limit                       
+000045ac  __TI_CINIT_Warm                        
 0000ffd2  __TI_int41                             
 0000ffd4  __TI_int42                             
 0000ffd6  __TI_int43                             
@@ -2185,126 +2184,126 @@ address   name
 000125cc  scalbn                                 
 000125cc  scalbnl                                
 00012858  main                                   
-00012974  aligned_alloc                          
-00012974  memalign                               
-00012a86  fputs                                  
-00012b76  free                                   
-00012c58  setvbuf                                
-00012d36  __TI_printfi_minimal                   
-00012eec  __mspabi_cmpd                          
-00012fc4  __mspabi_fltlid                        
-00013062  HOSTlseek                              
-000130fc  fputc                                  
-000130fc  putc                                   
-0001318c  __mspabi_fltuld                        
-0001320c  __TI_wrt_ok                            
-0001328a  __TI_decompress_lzss                   
-00013300  HOSTrename                             
-00013374  __TI_closefile                         
-0001345c  ths_calc_temp                          
-000134ce  HOSTopen                               
-0001353e  HOSTwrite                              
-000135aa  HOSTread                               
-00013614  fseek                                  
-00013614  fseeko                                 
-0001367e  __mspabi_fixdli                        
-000136e4  __TI_doflush                           
-00013748  __mspabi_mpyll_f5hw                    
-000137a4  ths_calc_rh                            
-00013800  close                                  
-0001385a  getdevice                              
-000138b4  __TI_auto_init_nobinit_nopinit_hold_wdt
-00013908  HOSTclose                              
-00013956  exit                                   
-000139a0  printf                                 
-00013a32  HOSTunlink                             
-00013a78  __mspabi_srall                         
-00013ab8  __mspabi_sral_15                       
-00013abc  __mspabi_sral_14                       
-00013ac0  __mspabi_sral_13                       
-00013ac4  __mspabi_sral_12                       
-00013ac8  __mspabi_sral_11                       
-00013acc  __mspabi_sral_10                       
-00013ad0  __mspabi_sral_9                        
-00013ad4  __mspabi_sral_8                        
-00013ad8  __mspabi_sral_7                        
-00013adc  __mspabi_sral_6                        
-00013ae0  __mspabi_sral_5                        
-00013ae4  __mspabi_sral_4                        
-00013ae8  __mspabi_sral_3                        
-00013aec  __mspabi_sral_2                        
-00013af0  __mspabi_sral_1                        
-00013af6  __mspabi_slll_15                       
-00013afa  __mspabi_slll_14                       
-00013afe  __mspabi_slll_13                       
-00013b02  __mspabi_slll_12                       
-00013b06  __mspabi_slll_11                       
-00013b0a  __mspabi_slll_10                       
-00013b0e  __mspabi_slll_9                        
-00013b12  __mspabi_slll_8                        
-00013b16  __mspabi_slll_7                        
-00013b1a  __mspabi_slll_6                        
-00013b1e  __mspabi_slll_5                        
-00013b22  __mspabi_slll_4                        
-00013b26  __mspabi_slll_3                        
-00013b2a  __mspabi_slll_2                        
-00013b2e  __mspabi_slll_1                        
-00013b34  __mspabi_srll_15                       
-00013b38  __mspabi_srll_14                       
-00013b3c  __mspabi_srll_13                       
-00013b40  __mspabi_srll_12                       
-00013b44  __mspabi_srll_11                       
-00013b48  __mspabi_srll_10                       
-00013b4c  __mspabi_srll_9                        
-00013b50  __mspabi_srll_8                        
-00013b54  __mspabi_srll_7                        
-00013b58  __mspabi_srll_6                        
-00013b5c  __mspabi_srll_5                        
-00013b60  __mspabi_srll_4                        
-00013b64  __mspabi_srll_3                        
-00013b68  __mspabi_srll_2                        
-00013b6c  __mspabi_srll_1                        
-00013b72  lseek                                  
-00013bb0  write                                  
-00013bec  __mspabi_sllll                         
-00013c26  __mspabi_srlll                         
-00013c60  __TI_cleanup                           
-00013c96  __TI_writemsg                          
-00013cc8  C$$IO$$                                
-00013ccc  __TI_readmsg                           
-00013cfe  __mspabi_subd                          
-00013d30  strncpy                                
-00013d62  remove                                 
-00013d62  unlink                                 
-00013d92  __mspabi_negd                          
-00013dc0  copysign                               
-00013dc0  copysignl                              
-00013dee  finddevice                             
-00013e1c  __mspabi_mpyull_f5hw                   
-00013e9e  __mspabi_fixdi                         
-00013ec6  memccpy                                
-00013eec  __TI_zero_init_nomemset                
-00013f10  __mspabi_mpyl_f5hw                     
-00013f34  strchr                                 
-00013f50  strcmp                                 
-00013f6c  __mspabi_mpyi_f5hw                     
-00013f9a  memchr                                 
-00013fb0  memset                                 
-00013fc6  __mspabi_divu                          
-00013fc6  __mspabi_remu                          
-00013fdc  memcpy                                 
-00013ff0  __TI_decompress_none                   
-00014002  strcpy                                 
-00014014  __mspabi_sral                          
-00014024  __mspabi_slll                          
-00014034  __mspabi_srll                          
-00014044  strlen                                 
-00014052  malloc                                 
-00014060  C$$EXIT                                
-00014060  abort                                  
-0001406a  _system_pre_init                       
-0001406e  _nop                                   
-00014070  _system_post_cinit                     
+00012972  aligned_alloc                          
+00012972  memalign                               
+00012a84  fputs                                  
+00012b74  free                                   
+00012c56  setvbuf                                
+00012d34  __TI_printfi_minimal                   
+00012eea  __mspabi_cmpd                          
+00012fc2  __mspabi_fltlid                        
+00013060  HOSTlseek                              
+000130fa  fputc                                  
+000130fa  putc                                   
+0001318a  __mspabi_fltuld                        
+0001320a  __TI_wrt_ok                            
+00013288  __TI_decompress_lzss                   
+000132fe  HOSTrename                             
+00013372  __TI_closefile                         
+0001345a  ths_calc_temp                          
+000134cc  HOSTopen                               
+0001353c  HOSTwrite                              
+000135a8  HOSTread                               
+00013612  fseek                                  
+00013612  fseeko                                 
+0001367c  __mspabi_fixdli                        
+000136e2  __TI_doflush                           
+00013746  __mspabi_mpyll_f5hw                    
+000137a2  ths_calc_rh                            
+000137fe  close                                  
+00013858  getdevice                              
+000138b2  __TI_auto_init_nobinit_nopinit_hold_wdt
+00013906  HOSTclose                              
+00013954  exit                                   
+0001399e  printf                                 
+00013a30  HOSTunlink                             
+00013a76  __mspabi_srall                         
+00013ab6  __mspabi_sral_15                       
+00013aba  __mspabi_sral_14                       
+00013abe  __mspabi_sral_13                       
+00013ac2  __mspabi_sral_12                       
+00013ac6  __mspabi_sral_11                       
+00013aca  __mspabi_sral_10                       
+00013ace  __mspabi_sral_9                        
+00013ad2  __mspabi_sral_8                        
+00013ad6  __mspabi_sral_7                        
+00013ada  __mspabi_sral_6                        
+00013ade  __mspabi_sral_5                        
+00013ae2  __mspabi_sral_4                        
+00013ae6  __mspabi_sral_3                        
+00013aea  __mspabi_sral_2                        
+00013aee  __mspabi_sral_1                        
+00013af4  __mspabi_slll_15                       
+00013af8  __mspabi_slll_14                       
+00013afc  __mspabi_slll_13                       
+00013b00  __mspabi_slll_12                       
+00013b04  __mspabi_slll_11                       
+00013b08  __mspabi_slll_10                       
+00013b0c  __mspabi_slll_9                        
+00013b10  __mspabi_slll_8                        
+00013b14  __mspabi_slll_7                        
+00013b18  __mspabi_slll_6                        
+00013b1c  __mspabi_slll_5                        
+00013b20  __mspabi_slll_4                        
+00013b24  __mspabi_slll_3                        
+00013b28  __mspabi_slll_2                        
+00013b2c  __mspabi_slll_1                        
+00013b32  __mspabi_srll_15                       
+00013b36  __mspabi_srll_14                       
+00013b3a  __mspabi_srll_13                       
+00013b3e  __mspabi_srll_12                       
+00013b42  __mspabi_srll_11                       
+00013b46  __mspabi_srll_10                       
+00013b4a  __mspabi_srll_9                        
+00013b4e  __mspabi_srll_8                        
+00013b52  __mspabi_srll_7                        
+00013b56  __mspabi_srll_6                        
+00013b5a  __mspabi_srll_5                        
+00013b5e  __mspabi_srll_4                        
+00013b62  __mspabi_srll_3                        
+00013b66  __mspabi_srll_2                        
+00013b6a  __mspabi_srll_1                        
+00013b70  lseek                                  
+00013bae  write                                  
+00013bea  __mspabi_sllll                         
+00013c24  __mspabi_srlll                         
+00013c5e  __TI_cleanup                           
+00013c94  __TI_writemsg                          
+00013cc6  C$$IO$$                                
+00013cca  __TI_readmsg                           
+00013cfc  __mspabi_subd                          
+00013d2e  strncpy                                
+00013d60  remove                                 
+00013d60  unlink                                 
+00013d90  __mspabi_negd                          
+00013dbe  copysign                               
+00013dbe  copysignl                              
+00013dec  finddevice                             
+00013e1a  __mspabi_mpyull_f5hw                   
+00013e9c  __mspabi_fixdi                         
+00013ec4  memccpy                                
+00013eea  __TI_zero_init_nomemset                
+00013f0e  __mspabi_mpyl_f5hw                     
+00013f32  strchr                                 
+00013f4e  strcmp                                 
+00013f6a  __mspabi_mpyi_f5hw                     
+00013f98  memchr                                 
+00013fae  memset                                 
+00013fc4  __mspabi_divu                          
+00013fc4  __mspabi_remu                          
+00013fda  memcpy                                 
+00013fee  __TI_decompress_none                   
+00014000  strcpy                                 
+00014012  __mspabi_sral                          
+00014022  __mspabi_slll                          
+00014032  __mspabi_srll                          
+00014042  strlen                                 
+00014050  malloc                                 
+0001405e  C$$EXIT                                
+0001405e  abort                                  
+00014068  _system_pre_init                       
+0001406c  _nop                                   
+0001406e  _system_post_cinit                     
 ffffffff  __TI_pprof_out_hndl                    
 ffffffff  __TI_prof_data_size                    
 ffffffff  __TI_prof_data_start                   

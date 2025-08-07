@@ -33,26 +33,27 @@ void main(void)
    *------INITIALIZE I2C
    */
 
-  UCB0CTLW0 = UCSWRST;                  //RESET
-  UCB0CTLW0 |= UCMODE_3;                //SET I2C BIT
-  UCB0CTLW0 |= UCMST;                   //SET MASTER
- 
-  UCB0CTLW0 |= UCSYNC;                  //SET SYNCHRONOUS MODE
+  UCB0CTL1 = UCSWRST;                  //RESET
 
-  UCB0CTLW0 |= UCSSEL_3;                //SEL SECONDARY CLOCK
-  UCB0BRW = 10;                         //SET SCALER DIVIDE BY 10 FOR 100KHZ
+  UCB0CTL0 |= UCMODE_3;                //SET I2C BIT
+  UCB0CTL0 |= UCMST;                   //SET MASTER
+  UCB0CTL0 |= UCSYNC;                  //SET SYNCHRONOUS MODE
+
+  UCB0CTL1 |= UCSSEL_3;                //SEL SECONDARY CLOCK
+  UCB0BRW = 12;                         //SET SCALER DIVIDE BY 12 FOR approx 100KHZ
+  UCB0BR1 = 0;
 
   UCB0I2CSA = CHILD_ADDR;               //SET SLAVE ADDRESS
-
   P3SEL |= 0x03;                        //P3SEL |= BIT0;                        //SET P3.0 SDA??
                                         //P3SEL |= BIT1;                        //SET P3.1 SCL??
 
                                         //ENABLE PULLUP RESISTORS????????????
                                         //TURN ON IO?? PM5CTL0 &= ~LOCKLPM5
-                                        //P3REN |=      enable pullup resistor?? 
+  //P3REN |= 0x03;
+  //P3OUT |= 0x03;                                      //P3REN |=      enable pullup resistor?? 
                                         //P3OUT = 0x01  enable pullup resistor high??
 
-  UCB0CTLW0 &= ~UCSWRST;                //EXIT RESET
+  UCB0CTL1 &= ~UCSWRST;                //EXIT RESET
 
   /*
    *------ENABLE IRQ
@@ -60,8 +61,7 @@ void main(void)
 
   UCB0IE |= UCTXIE;                     //SET TX IRQ
   UCB0IE |= UCRXIE;                     //SET RX IRQ                       
-  __enable_interrupt();                 //SET GLOBAL INTERRUPT GIE
-  
+
   /*
    *------CONFIGURE LED
    */
@@ -78,7 +78,7 @@ void main(void)
     while( UCB0IFG & UCSTPIFG == 0){};  //WAIT TILL STOP FLAG IS SET
     UCB0IFG &= ~UCSTPIFG;               //CLEAR STOP FLAG
 
-    __delay_cycles(1000000);     //delay for reading - is this required???
+    __delay_cycles(1000);       //delay for reading - is this required???
                                    
     UCB0CTLW0 &= ~UCTR;                 //CHANGE TO READ
     UCB0CTLW0 |= UCTXSTT;               //START TRANSMISSION
@@ -89,6 +89,9 @@ void main(void)
     UCB0IFG &= ~UCSTPIFG;               //CLEAR STOP FLAG
 
     P1OUT &= ~BIT0;
+
+    __bis_SR_register(LPM0_bits + GIE); 
+    __no_operation();
 
     temp_uncorr = (uint32_t)((rx_buffer[1] << 12) | (rx_buffer[2] << 4) | (rx_buffer[3] >> 4));     //extract raw temp data
 
@@ -113,16 +116,11 @@ uint8_t i = 0;
   
   switch(UCB0IV){
         case 0x0A:                                //RXIFG (Receive Interrupt Flag)
-            i = 0;                                //WILL RECEIVE 6 BITS FROM SENSOR
-            if (i == 4){                          //UCTXSTP MUST BE SENT DURING THE NEXT TO LAST BYTE
-              UCB0CTLW0 |= UCTXSTP;
+            i = 0;                                
+            if(i == (sizeof(rx_buffer) - 2)){
               rx_buffer[i] = UCB0RXBUF;
-              i++;
-            }
-            if(i == 5){
-              rx_buffer[i] = UCB0RXBUF;
-              i = 0;
-            } else{
+              UCB0CTL1 |= UCTXSTP;
+              } else{
               rx_buffer[i] = UCB0RXBUF;
               i++;
             }
@@ -131,7 +129,6 @@ uint8_t i = 0;
             i = 0;
             if(i == (sizeof(tx_buffer) - 1)){     
               UCB0TXBUF = tx_buffer[i];
-              i = 0;
               UCB0CTLW0 |= UCTXSTP;
               P1OUT |= BIT0;
             } else{
@@ -156,3 +153,4 @@ int8_t ths_calc_temp(uint32_t temp_uncorr){
 uint8_t ths_calc_rh(uint32_t rh_uncorr){
     return (uint8_t)((rh_uncorr/pow(2,20))*100);
 }
+
